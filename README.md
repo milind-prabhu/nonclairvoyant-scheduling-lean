@@ -273,3 +273,5 @@ The proofs are checked against the finite discrete-time definitions described
 above. As with any formalization, the correspondence between those definitions
 and the paper's intended model is a separate mathematical interpretation;
 the exact assumptions and guarantees are visible in the main declarations.
+
+This formalization was achieved using **ChatGPT-6 Astra**.
