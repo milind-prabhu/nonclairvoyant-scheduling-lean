@@ -1,0 +1,15 @@
+{
+  "title": "Non-Clairvoyant Scheduling is Hard Even for Trees",
+  "authors": [
+    "Kunal Agrawal",
+    "Owen Druzgal",
+    "Milind Prabhu",
+    "Jinhao Zhao"
+  ],
+  "arxiv_id": "2610.11006",
+  "version": "v1",
+  "url": "https://arxiv.org/abs/2610.11006v1",
+  "pdf_sha256": "65ea010eb217e5e88394e58e2467a82d80176586252c75f0f19a60a1f5641e9b",
+  "formalization_status": "All four main theorems verified in the finite discrete-time model, including general and batched randomized lower bounds against an oblivious adversary; see STATUS.md for exact statements and assumptions.",
+  "lean_version": "4.33.0"
+}

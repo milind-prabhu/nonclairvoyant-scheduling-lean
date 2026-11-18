@@ -1,0 +1,787 @@
+{
+  "modules": {
+    "Scheduling.Accounting": [
+      "Scheduling.FrontierProgress"
+    ],
+    "Scheduling.AdversaryForcing": [
+      "Scheduling.AdversaryOffline",
+      "Scheduling.ForcingTrace",
+      "Scheduling.RegularBacklog"
+    ],
+    "Scheduling.AdversaryOffline": [
+      "Scheduling.LayerCount",
+      "Scheduling.KeyOrder"
+    ],
+    "Scheduling.AppendBefore": [
+      "Scheduling.AppendObservation"
+    ],
+    "Scheduling.AppendContinuation": [
+      "Scheduling.AppendBefore"
+    ],
+    "Scheduling.AppendInstance": [
+      "Scheduling.HardFamilies"
+    ],
+    "Scheduling.AppendObservation": [
+      "Scheduling.AppendRestriction"
+    ],
+    "Scheduling.AppendRestriction": [
+      "Scheduling.AppendInstance"
+    ],
+    "Scheduling.Backlog": [
+      "Scheduling.Counting"
+    ],
+    "Scheduling.BalancedLayers": [
+      "Scheduling.OfflineBatched",
+      "Scheduling.LayeredForest"
+    ],
+    "Scheduling.Batched": [
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.BatchedAdversaryOffline": [
+      "Scheduling.BatchedParentCuts"
+    ],
+    "Scheduling.BatchedAggregate": [
+      "Scheduling.BatchedCutoffArithmetic"
+    ],
+    "Scheduling.BatchedChoice": [
+      "Scheduling.BatchedCounters"
+    ],
+    "Scheduling.BatchedCounters": [
+      "Scheduling.BatchedWideWork",
+      "Scheduling.BatchedCredit"
+    ],
+    "Scheduling.BatchedCredit": [
+      "Scheduling.BatchedForcingArithmetic"
+    ],
+    "Scheduling.BatchedCutoffArithmetic": [
+      "Scheduling.BatchedWideUpper"
+    ],
+    "Scheduling.BatchedForcing": [
+      "Scheduling.BatchedAggregate"
+    ],
+    "Scheduling.BatchedForcingArithmetic": [
+      "Scheduling.RegularBacklog"
+    ],
+    "Scheduling.BatchedFrontierCredit": [
+      "Scheduling.BatchedChoice"
+    ],
+    "Scheduling.BatchedHistory": [
+      "Scheduling.BatchedAdversaryOffline"
+    ],
+    "Scheduling.BatchedLayerBudget": [
+      "Scheduling.BatchedLayerRule"
+    ],
+    "Scheduling.BatchedLayerRule": [
+      "Scheduling.FlexibleLayers"
+    ],
+    "Scheduling.BatchedLower": [
+      "Scheduling.BatchedForcing"
+    ],
+    "Scheduling.BatchedParentCuts": [
+      "Scheduling.BatchedLayerBudget",
+      "Scheduling.RecordedKeys",
+      "Scheduling.KeyPrefix"
+    ],
+    "Scheduling.BatchedRecordCredit": [
+      "Scheduling.BatchedFrontierCredit"
+    ],
+    "Scheduling.BatchedRecords": [
+      "Scheduling.Batched"
+    ],
+    "Scheduling.BatchedRevealTimes": [
+      "Scheduling.BatchedRecordCredit"
+    ],
+    "Scheduling.BatchedWideUpper": [
+      "Scheduling.BatchedRevealTimes"
+    ],
+    "Scheduling.BatchedWideWork": [
+      "Scheduling.BatchedHistory",
+      "Scheduling.RegularBacklog"
+    ],
+    "Scheduling.Combined": [
+      "Scheduling.PhaseFailure"
+    ],
+    "Scheduling.Counting": [
+      "Scheduling.Model"
+    ],
+    "Scheduling.DeterministicLower": [
+      "Scheduling.AdversaryForcing"
+    ],
+    "Scheduling.Examples": [
+      "Scheduling.SFFConstruction",
+      "Scheduling.FIFOConstruction"
+    ],
+    "Scheduling.Execution": [
+      "Scheduling.RoundPlanner"
+    ],
+    "Scheduling.ExecutionBridge": [
+      "Scheduling.Termination"
+    ],
+    "Scheduling.FIFO": [
+      "Scheduling.Backlog"
+    ],
+    "Scheduling.FIFOConstruction": [
+      "Scheduling.Packing",
+      "Scheduling.BatchedRecords"
+    ],
+    "Scheduling.FIFOLower": [
+      "Scheduling.StarChainFIFO"
+    ],
+    "Scheduling.FiniteAmplification": [
+      "Scheduling.InstanceSequence"
+    ],
+    "Scheduling.FiniteForests": [
+      "Scheduling.BatchedLower",
+      "Scheduling.DeterministicLower"
+    ],
+    "Scheduling.FlexibleLayers": [
+      "Scheduling.LayerRecords"
+    ],
+    "Scheduling.ForcingTrace": [
+      "Scheduling.JobLayers"
+    ],
+    "Scheduling.FrontierProgress": [
+      "Scheduling.FIFO"
+    ],
+    "Scheduling.HardContinuation": [
+      "Scheduling.AppendContinuation"
+    ],
+    "Scheduling.HardFamilies": [
+      "Scheduling.FiniteForests"
+    ],
+    "Scheduling.HiddenKey": [
+      "Scheduling.PublicGraph"
+    ],
+    "Scheduling.Information": [
+      "Scheduling.FIFOConstruction"
+    ],
+    "Scheduling.InstanceSequence": [
+      "Scheduling.HardContinuation"
+    ],
+    "Scheduling.JobLayers": [
+      "Scheduling.LayerRecords"
+    ],
+    "Scheduling.KeyOrder": [],
+    "Scheduling.KeyPrefix": [
+      "Scheduling.KeyOrder",
+      "Scheduling.BalancedLayers"
+    ],
+    "Scheduling.LayerAdversary": [
+      "Scheduling.LayeredPrefix"
+    ],
+    "Scheduling.LayerChronology": [
+      "Scheduling.LayerAdversary"
+    ],
+    "Scheduling.LayerCount": [
+      "Scheduling.JobLayers"
+    ],
+    "Scheduling.LayerRecords": [
+      "Scheduling.LayerChronology"
+    ],
+    "Scheduling.LayeredExecution": [
+      "Scheduling.LayeredForest"
+    ],
+    "Scheduling.LayeredForcing": [
+      "Scheduling.LayeredExecution",
+      "Scheduling.RegularBacklog"
+    ],
+    "Scheduling.LayeredForest": [
+      "Scheduling.OfflinePipeline"
+    ],
+    "Scheduling.LayeredPrefix": [
+      "Scheduling.HiddenKey",
+      "Scheduling.LayeredForest"
+    ],
+    "Scheduling.Model": [],
+    "Scheduling.OfflineBatched": [
+      "Scheduling.OfflinePipeline"
+    ],
+    "Scheduling.OfflinePipeline": [
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.Optimum": [
+      "Scheduling.FIFO"
+    ],
+    "Scheduling.Packing": [
+      "Scheduling.SFF"
+    ],
+    "Scheduling.PackingTransport": [
+      "Scheduling.Packing"
+    ],
+    "Scheduling.PhaseFailure": [
+      "Scheduling.PhaseTransport"
+    ],
+    "Scheduling.PhaseInformation": [
+      "Scheduling.Combined",
+      "Scheduling.SFFNonclairvoyant"
+    ],
+    "Scheduling.PhaseObservations": [
+      "Scheduling.PhaseInformation",
+      "Scheduling.Renaming"
+    ],
+    "Scheduling.PhaseTransport": [
+      "Scheduling.Residual",
+      "Scheduling.SFFConstruction",
+      "Scheduling.FIFOConstruction"
+    ],
+    "Scheduling.PublicCombined": [
+      "Scheduling.PhaseObservations"
+    ],
+    "Scheduling.PublicGraph": [
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.PublicSFF": [
+      "Scheduling.Information",
+      "Scheduling.PackingTransport",
+      "Scheduling.SFFConstruction"
+    ],
+    "Scheduling.Randomized": [
+      "Scheduling.FiniteAmplification"
+    ],
+    "Scheduling.RandomizedFamily": [
+      "Scheduling.Randomized"
+    ],
+    "Scheduling.RandomizedLower": [
+      "Scheduling.RandomizedFamily"
+    ],
+    "Scheduling.RecordedKeys": [
+      "Scheduling.AdversaryOffline"
+    ],
+    "Scheduling.RegularBacklog": [
+      "Scheduling.Accounting",
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.Renaming": [
+      "Scheduling.SFFNonclairvoyant"
+    ],
+    "Scheduling.Residual": [
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.RoundPlanner": [
+      "Scheduling.Packing"
+    ],
+    "Scheduling.SFF": [
+      "Scheduling.SFFInterference",
+      "Scheduling.Optimum"
+    ],
+    "Scheduling.SFFConstruction": [
+      "Scheduling.ExecutionBridge"
+    ],
+    "Scheduling.SFFHistory": [
+      "Scheduling.PublicSFF"
+    ],
+    "Scheduling.SFFInterference": [
+      "Scheduling.SFFWork"
+    ],
+    "Scheduling.SFFModel": [
+      "Scheduling.FrontierProgress"
+    ],
+    "Scheduling.SFFNonclairvoyant": [
+      "Scheduling.SFFHistory"
+    ],
+    "Scheduling.SFFRoundBounds": [
+      "Scheduling.SFFModel"
+    ],
+    "Scheduling.SFFWork": [
+      "Scheduling.SFFRoundBounds"
+    ],
+    "Scheduling.Schedulers": [
+      "Scheduling.PublicGraph",
+      "Scheduling.PublicCombined",
+      "Scheduling.FIFOLower"
+    ],
+    "Scheduling.StarChain": [
+      "Scheduling.OfflinePipeline",
+      "Scheduling.LayeredForest"
+    ],
+    "Scheduling.StarChainAdversary": [
+      "Scheduling.StarChain",
+      "Scheduling.PublicGraph"
+    ],
+    "Scheduling.StarChainFIFO": [
+      "Scheduling.StarChainAdversary",
+      "Scheduling.RegularBacklog"
+    ],
+    "Scheduling.Termination": [
+      "Scheduling.Execution"
+    ]
+  },
+  "edges": [
+    [
+      "Scheduling.Accounting",
+      "Scheduling.RegularBacklog"
+    ],
+    [
+      "Scheduling.AdversaryForcing",
+      "Scheduling.DeterministicLower"
+    ],
+    [
+      "Scheduling.AdversaryOffline",
+      "Scheduling.AdversaryForcing"
+    ],
+    [
+      "Scheduling.AdversaryOffline",
+      "Scheduling.RecordedKeys"
+    ],
+    [
+      "Scheduling.AppendBefore",
+      "Scheduling.AppendContinuation"
+    ],
+    [
+      "Scheduling.AppendContinuation",
+      "Scheduling.HardContinuation"
+    ],
+    [
+      "Scheduling.AppendInstance",
+      "Scheduling.AppendRestriction"
+    ],
+    [
+      "Scheduling.AppendObservation",
+      "Scheduling.AppendBefore"
+    ],
+    [
+      "Scheduling.AppendRestriction",
+      "Scheduling.AppendObservation"
+    ],
+    [
+      "Scheduling.Backlog",
+      "Scheduling.FIFO"
+    ],
+    [
+      "Scheduling.BalancedLayers",
+      "Scheduling.KeyPrefix"
+    ],
+    [
+      "Scheduling.Batched",
+      "Scheduling.BatchedRecords"
+    ],
+    [
+      "Scheduling.BatchedAdversaryOffline",
+      "Scheduling.BatchedHistory"
+    ],
+    [
+      "Scheduling.BatchedAggregate",
+      "Scheduling.BatchedForcing"
+    ],
+    [
+      "Scheduling.BatchedChoice",
+      "Scheduling.BatchedFrontierCredit"
+    ],
+    [
+      "Scheduling.BatchedCounters",
+      "Scheduling.BatchedChoice"
+    ],
+    [
+      "Scheduling.BatchedCredit",
+      "Scheduling.BatchedCounters"
+    ],
+    [
+      "Scheduling.BatchedCutoffArithmetic",
+      "Scheduling.BatchedAggregate"
+    ],
+    [
+      "Scheduling.BatchedForcing",
+      "Scheduling.BatchedLower"
+    ],
+    [
+      "Scheduling.BatchedForcingArithmetic",
+      "Scheduling.BatchedCredit"
+    ],
+    [
+      "Scheduling.BatchedFrontierCredit",
+      "Scheduling.BatchedRecordCredit"
+    ],
+    [
+      "Scheduling.BatchedHistory",
+      "Scheduling.BatchedWideWork"
+    ],
+    [
+      "Scheduling.BatchedLayerBudget",
+      "Scheduling.BatchedParentCuts"
+    ],
+    [
+      "Scheduling.BatchedLayerRule",
+      "Scheduling.BatchedLayerBudget"
+    ],
+    [
+      "Scheduling.BatchedLower",
+      "Scheduling.FiniteForests"
+    ],
+    [
+      "Scheduling.BatchedParentCuts",
+      "Scheduling.BatchedAdversaryOffline"
+    ],
+    [
+      "Scheduling.BatchedRecordCredit",
+      "Scheduling.BatchedRevealTimes"
+    ],
+    [
+      "Scheduling.BatchedRecords",
+      "Scheduling.FIFOConstruction"
+    ],
+    [
+      "Scheduling.BatchedRevealTimes",
+      "Scheduling.BatchedWideUpper"
+    ],
+    [
+      "Scheduling.BatchedWideUpper",
+      "Scheduling.BatchedCutoffArithmetic"
+    ],
+    [
+      "Scheduling.BatchedWideWork",
+      "Scheduling.BatchedCounters"
+    ],
+    [
+      "Scheduling.Combined",
+      "Scheduling.PhaseInformation"
+    ],
+    [
+      "Scheduling.Counting",
+      "Scheduling.Backlog"
+    ],
+    [
+      "Scheduling.DeterministicLower",
+      "Scheduling.FiniteForests"
+    ],
+    [
+      "Scheduling.Execution",
+      "Scheduling.Termination"
+    ],
+    [
+      "Scheduling.ExecutionBridge",
+      "Scheduling.SFFConstruction"
+    ],
+    [
+      "Scheduling.FIFO",
+      "Scheduling.FrontierProgress"
+    ],
+    [
+      "Scheduling.FIFO",
+      "Scheduling.Optimum"
+    ],
+    [
+      "Scheduling.FIFOConstruction",
+      "Scheduling.Examples"
+    ],
+    [
+      "Scheduling.FIFOConstruction",
+      "Scheduling.Information"
+    ],
+    [
+      "Scheduling.FIFOConstruction",
+      "Scheduling.PhaseTransport"
+    ],
+    [
+      "Scheduling.FIFOLower",
+      "Scheduling.Schedulers"
+    ],
+    [
+      "Scheduling.FiniteAmplification",
+      "Scheduling.Randomized"
+    ],
+    [
+      "Scheduling.FiniteForests",
+      "Scheduling.HardFamilies"
+    ],
+    [
+      "Scheduling.FlexibleLayers",
+      "Scheduling.BatchedLayerRule"
+    ],
+    [
+      "Scheduling.ForcingTrace",
+      "Scheduling.AdversaryForcing"
+    ],
+    [
+      "Scheduling.FrontierProgress",
+      "Scheduling.Accounting"
+    ],
+    [
+      "Scheduling.FrontierProgress",
+      "Scheduling.SFFModel"
+    ],
+    [
+      "Scheduling.HardContinuation",
+      "Scheduling.InstanceSequence"
+    ],
+    [
+      "Scheduling.HardFamilies",
+      "Scheduling.AppendInstance"
+    ],
+    [
+      "Scheduling.HiddenKey",
+      "Scheduling.LayeredPrefix"
+    ],
+    [
+      "Scheduling.Information",
+      "Scheduling.PublicSFF"
+    ],
+    [
+      "Scheduling.InstanceSequence",
+      "Scheduling.FiniteAmplification"
+    ],
+    [
+      "Scheduling.JobLayers",
+      "Scheduling.ForcingTrace"
+    ],
+    [
+      "Scheduling.JobLayers",
+      "Scheduling.LayerCount"
+    ],
+    [
+      "Scheduling.KeyOrder",
+      "Scheduling.AdversaryOffline"
+    ],
+    [
+      "Scheduling.KeyOrder",
+      "Scheduling.KeyPrefix"
+    ],
+    [
+      "Scheduling.KeyPrefix",
+      "Scheduling.BatchedParentCuts"
+    ],
+    [
+      "Scheduling.LayerAdversary",
+      "Scheduling.LayerChronology"
+    ],
+    [
+      "Scheduling.LayerChronology",
+      "Scheduling.LayerRecords"
+    ],
+    [
+      "Scheduling.LayerCount",
+      "Scheduling.AdversaryOffline"
+    ],
+    [
+      "Scheduling.LayerRecords",
+      "Scheduling.FlexibleLayers"
+    ],
+    [
+      "Scheduling.LayerRecords",
+      "Scheduling.JobLayers"
+    ],
+    [
+      "Scheduling.LayeredExecution",
+      "Scheduling.LayeredForcing"
+    ],
+    [
+      "Scheduling.LayeredForest",
+      "Scheduling.BalancedLayers"
+    ],
+    [
+      "Scheduling.LayeredForest",
+      "Scheduling.LayeredExecution"
+    ],
+    [
+      "Scheduling.LayeredForest",
+      "Scheduling.LayeredPrefix"
+    ],
+    [
+      "Scheduling.LayeredForest",
+      "Scheduling.StarChain"
+    ],
+    [
+      "Scheduling.LayeredPrefix",
+      "Scheduling.LayerAdversary"
+    ],
+    [
+      "Scheduling.Model",
+      "Scheduling.Counting"
+    ],
+    [
+      "Scheduling.OfflineBatched",
+      "Scheduling.BalancedLayers"
+    ],
+    [
+      "Scheduling.OfflinePipeline",
+      "Scheduling.LayeredForest"
+    ],
+    [
+      "Scheduling.OfflinePipeline",
+      "Scheduling.OfflineBatched"
+    ],
+    [
+      "Scheduling.OfflinePipeline",
+      "Scheduling.StarChain"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.Batched"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.OfflinePipeline"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.PublicGraph"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.RegularBacklog"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.Residual"
+    ],
+    [
+      "Scheduling.Optimum",
+      "Scheduling.SFF"
+    ],
+    [
+      "Scheduling.Packing",
+      "Scheduling.FIFOConstruction"
+    ],
+    [
+      "Scheduling.Packing",
+      "Scheduling.PackingTransport"
+    ],
+    [
+      "Scheduling.Packing",
+      "Scheduling.RoundPlanner"
+    ],
+    [
+      "Scheduling.PackingTransport",
+      "Scheduling.PublicSFF"
+    ],
+    [
+      "Scheduling.PhaseFailure",
+      "Scheduling.Combined"
+    ],
+    [
+      "Scheduling.PhaseInformation",
+      "Scheduling.PhaseObservations"
+    ],
+    [
+      "Scheduling.PhaseObservations",
+      "Scheduling.PublicCombined"
+    ],
+    [
+      "Scheduling.PhaseTransport",
+      "Scheduling.PhaseFailure"
+    ],
+    [
+      "Scheduling.PublicCombined",
+      "Scheduling.Schedulers"
+    ],
+    [
+      "Scheduling.PublicGraph",
+      "Scheduling.HiddenKey"
+    ],
+    [
+      "Scheduling.PublicGraph",
+      "Scheduling.Schedulers"
+    ],
+    [
+      "Scheduling.PublicGraph",
+      "Scheduling.StarChainAdversary"
+    ],
+    [
+      "Scheduling.PublicSFF",
+      "Scheduling.SFFHistory"
+    ],
+    [
+      "Scheduling.Randomized",
+      "Scheduling.RandomizedFamily"
+    ],
+    [
+      "Scheduling.RandomizedFamily",
+      "Scheduling.RandomizedLower"
+    ],
+    [
+      "Scheduling.RecordedKeys",
+      "Scheduling.BatchedParentCuts"
+    ],
+    [
+      "Scheduling.RegularBacklog",
+      "Scheduling.AdversaryForcing"
+    ],
+    [
+      "Scheduling.RegularBacklog",
+      "Scheduling.BatchedForcingArithmetic"
+    ],
+    [
+      "Scheduling.RegularBacklog",
+      "Scheduling.BatchedWideWork"
+    ],
+    [
+      "Scheduling.RegularBacklog",
+      "Scheduling.LayeredForcing"
+    ],
+    [
+      "Scheduling.RegularBacklog",
+      "Scheduling.StarChainFIFO"
+    ],
+    [
+      "Scheduling.Renaming",
+      "Scheduling.PhaseObservations"
+    ],
+    [
+      "Scheduling.Residual",
+      "Scheduling.PhaseTransport"
+    ],
+    [
+      "Scheduling.RoundPlanner",
+      "Scheduling.Execution"
+    ],
+    [
+      "Scheduling.SFF",
+      "Scheduling.Packing"
+    ],
+    [
+      "Scheduling.SFFConstruction",
+      "Scheduling.Examples"
+    ],
+    [
+      "Scheduling.SFFConstruction",
+      "Scheduling.PhaseTransport"
+    ],
+    [
+      "Scheduling.SFFConstruction",
+      "Scheduling.PublicSFF"
+    ],
+    [
+      "Scheduling.SFFHistory",
+      "Scheduling.SFFNonclairvoyant"
+    ],
+    [
+      "Scheduling.SFFInterference",
+      "Scheduling.SFF"
+    ],
+    [
+      "Scheduling.SFFModel",
+      "Scheduling.SFFRoundBounds"
+    ],
+    [
+      "Scheduling.SFFNonclairvoyant",
+      "Scheduling.PhaseInformation"
+    ],
+    [
+      "Scheduling.SFFNonclairvoyant",
+      "Scheduling.Renaming"
+    ],
+    [
+      "Scheduling.SFFRoundBounds",
+      "Scheduling.SFFWork"
+    ],
+    [
+      "Scheduling.SFFWork",
+      "Scheduling.SFFInterference"
+    ],
+    [
+      "Scheduling.StarChain",
+      "Scheduling.StarChainAdversary"
+    ],
+    [
+      "Scheduling.StarChainAdversary",
+      "Scheduling.StarChainFIFO"
+    ],
+    [
+      "Scheduling.StarChainFIFO",
+      "Scheduling.FIFOLower"
+    ],
+    [
+      "Scheduling.Termination",
+      "Scheduling.ExecutionBridge"
+    ]
+  ]
+}
